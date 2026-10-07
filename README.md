@@ -1,43 +1,47 @@
-# Astro Starter Kit: Minimal
+# Birdkanfly Aviation Website
 
-```sh
-npm create astro@latest -- --template minimal
+A multi-page marketing website for a flight-training academy in Mysore.
+It presents training programs, aircraft, admissions and contact information using Astro,
+Tailwind CSS, Alpine.js and GSAP.
+
+## Site map
+
+| Route | Purpose |
+| --- | --- |
+| `/` | Academy introduction and program highlights |
+| `/about` | Academy background |
+| `/programs` | Training offerings |
+| `/fleet` | Aircraft presentation |
+| `/admissions` | Admissions information |
+| `/contact` | Contact details and enquiry UI |
+
+Pages are authored in [src/pages](src/pages); shared navigation and footer live in
+[src/components](src/components). [Layout.astro](src/layouts/Layout.astro) wraps the pages.
+
+## Local development
+
+```bash
+git clone https://github.com/DanushArun/birdkanfly.git
+cd birdkanfly
+npm ci
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Open `http://localhost:4321`.
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm run build
+npm run preview
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+The production build is written to `dist`. Dependencies are recorded in the package lockfile.
+The repository has no test script or committed application backend.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Content and verification
 
-Any static assets, like images, can be placed in the `public/` directory.
+Academy accreditation, flying-day counts, course details and contact information are site copy.
+This repository review does not independently verify those business claims.
+Check them with the academy before publishing changes.
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+README links and package scripts were reviewed. No admissions submission, browser acceptance
+suite or live hosting check was performed for this documentation update.
